@@ -15,7 +15,7 @@ output logic [DATAWIDTH-1:0] output_data;
 integer a,b;
 
 logic [DATAWIDTH*Mult_Add_Units-1:0] temp;
-
+ 
 genvar i;
 generate
 	for (i = 0; i < Mult_Add_Units ; i = i + 1) begin
