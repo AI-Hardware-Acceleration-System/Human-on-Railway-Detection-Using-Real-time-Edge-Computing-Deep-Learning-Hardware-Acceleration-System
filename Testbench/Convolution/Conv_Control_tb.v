@@ -2,7 +2,7 @@
 
 module Conv_Control_tb();
     
-    // Parameters 
+    // Parameters  
     parameter SA_Units = 4;
     parameter KERNEL_SIZE = 3;
     parameter DATA_WIDTH = 16, STATE_DATAWIDTH = 4, ADDRESS_DATAWIDTH = 13;
