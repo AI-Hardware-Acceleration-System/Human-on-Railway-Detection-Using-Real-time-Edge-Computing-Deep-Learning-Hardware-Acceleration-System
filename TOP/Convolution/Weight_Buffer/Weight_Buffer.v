@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+ 
 module Weight_Buffer(
     weight0, weight1, weight2, weight3, weight4, weight5, weight6, weight7, weight8,
     clk, reset, //clk is normal clock
