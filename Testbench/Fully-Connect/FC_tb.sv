@@ -1,5 +1,5 @@
 module FC_tb();
-    
+     
 parameter datawidth = 16;
 parameter input_nodes = 784;
 parameter output_nodes = 2;
