@@ -10,7 +10,7 @@ module FC_MemCtrl#(
 
     logic [6:0] cnt;
     logic start;
-    
+     
     assign start = (state == Fully_Connect) ? 1 : 0;
     
     always_ff @ (posedge clk or negedge rst) begin
