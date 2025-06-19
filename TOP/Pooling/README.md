@@ -6,3 +6,9 @@
 >![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_4.png)<br/>
 >考慮到整體系統的運作時間和硬體使用資源，我們設計讓4個單通道平均池化處理核心同時運作，如下圖所示。<br/>
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_1.png)<br/>
+
+<br/>
+
+**詳細hierachy如下:**<br/>
+![image](https://github.com/user-attachments/assets/7a3b392a-8bb9-4f13-9c45-09d8954a9ddc)
+
