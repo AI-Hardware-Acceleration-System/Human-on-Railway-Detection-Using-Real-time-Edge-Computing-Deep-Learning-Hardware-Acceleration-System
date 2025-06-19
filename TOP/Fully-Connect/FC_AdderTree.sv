@@ -4,7 +4,7 @@ module FC_AdderTree#(
     parameter datawidth = 16,
     parameter Mult_Add_Units = 16 
 ) (
-    input  logic [datawidth*Mult_Add_Units-1:0] inputs,
+    input  logic [datawidth*Mult_Add_Units-1:0] inputs, 
     output logic [datawidth-1:0] result
 );
     localparam Padded_Units = 2**$clog2(Mult_Add_Units); 
