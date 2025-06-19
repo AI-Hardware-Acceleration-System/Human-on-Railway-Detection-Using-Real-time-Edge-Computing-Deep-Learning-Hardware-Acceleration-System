@@ -21,4 +21,5 @@ BRAM_Control會呼叫到 12 個 BRAM_Big 及 32 個 BRAM_small (共44個)，設�
   - Core Output Register
 
 
-詳請可參考BRAM_Settings.png
+詳請可參考下圖:</br>
+![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/TOP/BRAM_%20Settings.png)
