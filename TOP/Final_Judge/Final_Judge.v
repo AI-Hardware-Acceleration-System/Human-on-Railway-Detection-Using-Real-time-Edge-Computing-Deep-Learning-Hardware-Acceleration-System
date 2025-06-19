@@ -14,7 +14,7 @@ module Final_Judge#(
     input [15:0] no_human, 
     input [STATE_DATAWIDTH-1:0] State
     );
-    
+     
     wire [15:0] threshold = 16'h4065; //ln0.9-ln(1-0.9) in float 16 //softmax reverse
     wire [15:0] nohuman_add_threshold;
     wire compare;
