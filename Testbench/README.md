@@ -1,1 +1,2 @@
-進入TOP_Module資料夾，裡面的TOP_confirm就是整個TOP_Module的testbench
+這裡包含了各個Module的testbench。
+而進入TOP_Module資料夾，裡面的TOP_confirm就是整個TOP_Module的testbench。
