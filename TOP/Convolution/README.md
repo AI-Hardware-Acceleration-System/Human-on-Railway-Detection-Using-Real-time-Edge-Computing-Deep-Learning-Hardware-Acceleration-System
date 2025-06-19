@@ -8,6 +8,6 @@
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Convolution.png)<br/>
 
 **#詳細hierachy如下:**</br>
-![image](https://github.com/user-attachments/assets/3254fa52-832c-4b59-a9ce-a16030327cae)<br/>
-![image](https://github.com/user-attachments/assets/b9ee1b72-a6cd-4b96-af6f-3f057248a289)<br/>
+>![image](https://github.com/user-attachments/assets/3254fa52-832c-4b59-a9ce-a16030327cae)<br/>
+>![image](https://github.com/user-attachments/assets/b9ee1b72-a6cd-4b96-af6f-3f057248a289)<br/>
 
