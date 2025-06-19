@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module Avg_Pool_With_BRAM_tb();
-
+ 
     // Parameters
     parameter COMPUTING_CORES = 4;
     parameter number_datawidth = 16;
