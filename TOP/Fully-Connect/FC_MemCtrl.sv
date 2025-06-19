@@ -7,7 +7,7 @@ module FC_MemCtrl#(
     input logic [3:0] state,
     output logic [12:0] input_addr
 );
-
+ 
     logic [6:0] cnt;
     logic start;
     
