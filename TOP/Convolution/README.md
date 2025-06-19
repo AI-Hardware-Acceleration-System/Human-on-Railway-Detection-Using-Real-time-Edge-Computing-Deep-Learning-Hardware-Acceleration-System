@@ -4,5 +4,5 @@
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Systolic_Array_1.png)<br/>
 >圖二:<br/>
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Systolic_Array_2.png)<br/>
->考量到整體系統的運作時間和硬體資源，我們設計多個Systolic Array運算核心並行處理。在下圖的右方，Conv_Compute中會看到4個Systolic Array，這4個Systolic Array會同時做計算，計算結束後，將4個結果相加，存進BRAM裡。整體Convolution的運作如下圖所示:<br/>
+>考量到整體系統的運作時間和硬體資源，我們設計多個Systolic Array運算核心並行處理。在下圖的右方，Conv_Compute中會看到4個Systolic Array，這4個Systolic Array會同時做計算，計算結束後，將4個結果相加，存進BRAM裡。>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;整體Convolution的運作如下圖所示:<br/>
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Convolution.png)<br/>
