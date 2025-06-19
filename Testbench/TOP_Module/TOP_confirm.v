@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module TOP_confirm_tb;
-
+ 
     parameter PS_BRAM_DATAWIDTH = 64;
     parameter STATE_DATAWIDTH = 4;
     parameter BRAM_ADDR_WIDTH = 13; // 13-bit address for BRAM (8192 locations)
