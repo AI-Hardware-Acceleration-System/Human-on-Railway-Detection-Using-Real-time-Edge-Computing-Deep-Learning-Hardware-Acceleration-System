@@ -4,7 +4,7 @@ module Average_Pool1_With_Memory_Control(
     wr_ena, enable, clk, reset,
     state,
     BRAM_Pool_In1, BRAM_Pool_In1_Address,
-    BRAM_Pool_Out1, BRAM_Pool_Out1_Address
+    BRAM_Pool_Out1, BRAM_Pool_Out1_Address 
     );
     
     parameter input_map_address_datawidth = 13;
