@@ -6,7 +6,7 @@ module Weight_Buffer(
     enable, 
     change, // change to another channel,
     weight_OK
-    );
+); 
     
     parameter KERNEL_SIZE = 3;
     parameter ROM_ADDRESS_DATAWIDTH = 12;
