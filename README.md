@@ -16,4 +16,9 @@
 
 <br/>
 
-“CNN_Software”含訓練模型參數的程式碼；“PS”含預處理的程式碼；“TOP” 包含了所有計算加速會用到的程式碼；“Testbench”含電路的驗證檔。<br/>
+**#系統程式碼介紹**<br/>
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在本專案中:<br/>
+>- “CNN_Software”含人像辨識CNN模型之訓練模型參數的程式碼。<br/>
+>- “PS”含圖片預處理及PS端相關的程式碼。<br/>
+>- “TOP” 包含了所有PL端計算加速會用到的程式碼。<br/>
+>- “Testbench”含電路的驗證檔。<br/>
