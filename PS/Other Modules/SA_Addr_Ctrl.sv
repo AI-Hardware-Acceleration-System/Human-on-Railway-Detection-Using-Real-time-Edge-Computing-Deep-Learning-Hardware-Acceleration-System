@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+ 
 module SA_Addr_Ctrl#(
     parameter KERNEL_SIZE = 3,
     parameter latency = 34,
@@ -45,7 +45,7 @@ module SA_Addr_Ctrl#(
             if(start)begin
                 if(!done)begin
                     idle_cnt <= 0;
-                    if(i < 1) begin      //²Ä¤@­Óclk¤£°µ¨Æ
+                    if(i < 1) begin      //Â²Ã„Â¤@Â­Ã“clkÂ¤Â£Â°ÂµÂ¨Ã†
                         i <= i + 1;
                         j <= 0;
                     end
