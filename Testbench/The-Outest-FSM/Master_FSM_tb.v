@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+ 
 module Master_FSM_tb();
     
     parameter STATE_DATAWIDTH = 4;
