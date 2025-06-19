@@ -8,7 +8,7 @@ module Conv_Control(
     state,
     Out_Address
     );
-    
+     
     // Parameters 
     parameter SA_Units = 4;
     parameter KERNEL_SIZE = 3;
