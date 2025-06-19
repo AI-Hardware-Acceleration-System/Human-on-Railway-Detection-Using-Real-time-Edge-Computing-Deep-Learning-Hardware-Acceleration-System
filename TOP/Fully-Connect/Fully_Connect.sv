@@ -13,7 +13,7 @@ module Fully_Connect#(
     output logic [datawidth*output_nodes-1:0] output_data,
     output logic done
 );
-
+ 
     logic [datawidth*Mult_Add_Units-1:0] weights;
     logic [6:0] weight_addr;
     logic [datawidth*output_nodes-1:0] bias;
