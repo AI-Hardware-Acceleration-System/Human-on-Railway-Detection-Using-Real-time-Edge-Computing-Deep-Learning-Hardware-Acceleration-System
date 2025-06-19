@@ -1,11 +1,12 @@
 `timescale 1ns / 1ps
 
 module TOP_confirm_tb;
- 
+
     parameter PS_BRAM_DATAWIDTH = 64;
     parameter STATE_DATAWIDTH = 4;
     parameter BRAM_ADDR_WIDTH = 13; // 13-bit address for BRAM (8192 locations)
     parameter MAX = 7056;
+    parameter OUT_LATENCY = 8;
     
     reg clk_fast, clk_slow;
     reg reset;
@@ -25,12 +26,24 @@ module TOP_confirm_tb;
     wire [BRAM_ADDR_WIDTH-1:0] input_addr;
     wire [BRAM_ADDR_WIDTH-1:0] output_addr;
     wire [BRAM_ADDR_WIDTH-1:0] out_temp_addr;
-
+    
+    
     // Output wires from Top module
     wire judge_result;
     wire PS_data_start;
     wire [STATE_DATAWIDTH - 1 : 0] state;
-
+    
+    
+    wire clk_compound;
+    clock_switch clock_switch0(
+        .clk3(clk_fast), .clk1(clk_slow),
+        .rst(reset),
+        .State(state),
+        .clk_out(clk_compound)
+    );
+    
+    wire [255:0] test_data;
+    wire test_data_write_enable;
     // Instantiate the Top module
     Top TOP (
         .state(state),
@@ -41,7 +54,9 @@ module TOP_confirm_tb;
         .reset(reset),
         .PS_BRAM_busy(PS_BRAM_busy),
         .PS_BRAM_rdata(PS_BRAM_rdata),
-        .Conv1_1_Address(output_addr)
+        .Conv1_1_Address(output_addr),
+        .test_data(test_data),
+        .test_data_write_enable(test_data_write_enable)
     );
 
     // Instantiate BRAM modules (VHDL BRAMs) with dynamic addressing from SA_Addr_Ctrl
@@ -73,8 +88,10 @@ module TOP_confirm_tb;
     );
 
     // Instantiate SA_Addr_Ctrl
-    SA_Addr_Ctrl addr_ctrl (
-        .clk(clk_fast),
+    SA_Addr_Ctrl #(
+        .out_latency(OUT_LATENCY)
+    )addr_ctrl(
+        .clk(clk_compound),
         .rst_n(rst_n),
         .start(PS_data_start),
         .IN_SIZE(IN_SIZE),
@@ -95,9 +112,9 @@ module TOP_confirm_tb;
     end
     
     assign PS_BRAM_rdata[63:48] = 16'd0;
-    assign PS_BRAM_rdata[47:32] = (reg_addr < MAX)? dout_r:16'd0;
-    assign PS_BRAM_rdata[31:16] = (reg_addr < MAX)? dout_g:16'd0;
-    assign PS_BRAM_rdata[15:0] = (reg_addr < MAX)? dout_b:16'd0;
+    assign PS_BRAM_rdata[47:32] = (value_addr < MAX)? dout_r:16'd0;
+    assign PS_BRAM_rdata[31:16] = (value_addr < MAX)? dout_g:16'd0;
+    assign PS_BRAM_rdata[15:0] = (value_addr < MAX)? dout_b:16'd0;
 
 
     initial begin
@@ -149,4 +166,35 @@ module TOP_confirm_tb;
         
     end 
     
+//    always @(*) begin
+//    if (state == 4) begin
+//      $display("[TCL_CONSOLE] @%0t: data_out = 0x%0h (enable=1)",
+//               $time, test_data);
+//    end
+//  end
+  
+      integer outfile;
+        // open file
+      initial begin
+        outfile = $fopen("Conv1_1_add_final.txt", "w");
+        if (outfile == 0) begin
+          $display("Failed to open file for writing!");
+        end
+      end
+    
+      // output to file
+      always @(posedge clk_slow) begin
+        if (state == 2) begin
+//          $display("[TCL_CONSOLE] @%0t: data_out = 0x%0h (enable=1)", $time, data_out);
+          if(test_data_write_enable) begin
+                $fdisplay(outfile, "%h",  test_data);
+          end 
+        end
+      end
+    
+      // 結束時關檔
+      initial begin 
+        wait(state==3); 
+        $fclose(outfile); 
+      end
 endmodule
