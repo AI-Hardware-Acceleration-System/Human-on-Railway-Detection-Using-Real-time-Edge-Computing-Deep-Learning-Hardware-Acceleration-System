@@ -14,7 +14,7 @@ module FC_Ctrl_Unit #(
     output logic [6:0] weight_addr,
     output logic done
 );
-    
+     
 logic [datawidth*output_nodes-1:0] result_temp_A;
 logic [datawidth*output_nodes-1:0] result_temp_T;
 logic [datawidth*output_nodes-1:0] total_result;
