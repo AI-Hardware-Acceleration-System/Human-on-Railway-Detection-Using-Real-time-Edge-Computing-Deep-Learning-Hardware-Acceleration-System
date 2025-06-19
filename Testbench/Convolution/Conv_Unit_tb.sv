@@ -5,7 +5,7 @@ module Conv_Unit_tb();
     parameter SA_UNITS = 4;
     parameter KERNEL_SIZE = 3;
     parameter IN_SIZE = 6;
-    
+     
     logic clk;
     logic rst_n;
     logic calculate;
