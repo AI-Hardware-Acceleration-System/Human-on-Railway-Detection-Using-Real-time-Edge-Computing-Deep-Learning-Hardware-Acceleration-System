@@ -4,7 +4,7 @@
 <img src="https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_3.png" width="60%"><br/>
 
 >池化層電路圖如下:<br/>
-<img src="https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_4.png" width="80%"><br/>
+<img src="https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_4.png" width="60%"><br/>
 >考慮到整體系統的運作時間和硬體使用資源，我們設計讓4個單通道平均池化處理核心同時運作，如下圖所示。<br/>
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/Pooling_1.png)<br/>
 
