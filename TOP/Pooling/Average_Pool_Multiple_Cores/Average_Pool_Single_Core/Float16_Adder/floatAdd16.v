@@ -1,7 +1,7 @@
 module floatAdd16 (
     input logic [15:0] floatA,
     input logic [15:0] floatB,
-    output logic [15:0] sum
+    output logic [15:0] sum 
 );
 
     logic sign;
