@@ -10,7 +10,7 @@ module Enable_Ctrl#(
     parameter CONV2_1_STATE = 5, CONV2_2_STATE = 6, AVG_POOL2 = 7,
     parameter CONV3_1_STATE = 8, CONV3_2_STATE = 9, AVG_POOL3 = 10,
     parameter FC_STATE = 11,
-    parameter JUDGE = 12
+    parameter JUDGE = 12 
 )(
     input logic clk, rst_n,
     input logic [3:0] state,
