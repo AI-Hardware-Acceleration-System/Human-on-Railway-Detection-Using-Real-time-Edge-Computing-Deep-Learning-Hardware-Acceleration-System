@@ -12,7 +12,7 @@ module Master_FSM(
     parameter ADDRESS_DATAWIDTH = 13; // for PS BRAM
 //    parameter INPUT_SIZE = 80;
     
-    // total state
+    // total state 
     parameter RESET = 0, IDLE = 1;
     parameter CONV1_1_STATE = 2, CONV1_2_STATE = 3, AVG_POOL1 = 4;
     parameter CONV2_1_STATE = 5, CONV2_2_STATE = 6, AVG_POOL2 = 7;
