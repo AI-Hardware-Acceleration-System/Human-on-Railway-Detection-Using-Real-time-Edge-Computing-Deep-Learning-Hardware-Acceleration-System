@@ -1,7 +1,7 @@
 module bram_transfer (
     input  wire         clk,
     input  wire         rstn,    // Active-low reset
-
+ 
     // --- BRAM Port A: Read Port (Previously Write Port) ---
     (* X_INTERFACE_PARAMETER = "MASTER_TYPE BRAM_CTRL, FREQ_HZ 100000000" *)
     (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_CTRLR CLK" *)  
