@@ -4,5 +4,4 @@
 完成 Block Design 後，匯出 .tcl、.hwh、.bit 三個檔案，並在Jupyter Notebook執行「Preprocess」資料夾中的程式碼。
 請確保這三個檔案的檔名一致。
 
-![Alt Text](Vivado_Block_Design.png)
-
+![image](https://github.com/user-attachments/assets/f8791c74-29db-453b-ac7c-a6cf2ed09540)
