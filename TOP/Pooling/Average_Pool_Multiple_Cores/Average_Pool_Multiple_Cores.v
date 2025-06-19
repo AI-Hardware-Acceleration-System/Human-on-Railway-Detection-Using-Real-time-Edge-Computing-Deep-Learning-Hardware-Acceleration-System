@@ -7,7 +7,7 @@ module Avg_Pool_Multiple_Cores(
     avg_loop,
     state,
     BRAM_Pool_In1, BRAM_Pool_In1_Address,
-    BRAM_Pool_Out1, BRAM_Pool_Out1_Address
+    BRAM_Pool_Out1, BRAM_Pool_Out1_Address 
     );
     
     // Parameters
