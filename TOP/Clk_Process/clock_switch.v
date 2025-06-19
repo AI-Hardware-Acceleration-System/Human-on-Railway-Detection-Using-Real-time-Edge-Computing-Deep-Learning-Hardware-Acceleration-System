@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+ 
 //module clock_switch#(
 //    parameter STATE_DATAWIDTH = 4,
 //    parameter IDLE = 1,
