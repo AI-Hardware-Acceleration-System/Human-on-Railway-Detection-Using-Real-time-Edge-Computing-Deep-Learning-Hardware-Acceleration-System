@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module Weight_Buffer_TB();
-    
+     
     // Parameters
     parameter KERNEL_SIZE = 3;
     parameter ROM_ADDRESS_DATAWIDTH = 12;
