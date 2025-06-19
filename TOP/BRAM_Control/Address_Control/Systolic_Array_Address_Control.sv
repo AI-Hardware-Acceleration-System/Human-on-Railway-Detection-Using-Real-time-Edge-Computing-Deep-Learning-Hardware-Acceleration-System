@@ -4,7 +4,7 @@ module SA_Addr_Ctrl#(
     parameter KERNEL_SIZE = 3,
     parameter latency = 34,
     parameter out_latency = 4
-)(
+)( 
     input logic clk, rst_n,
     input logic start,
     input logic [6:0] IN_SIZE,
