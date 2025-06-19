@@ -7,7 +7,7 @@ module uint8_to_float16 (
     reg sign;               // Sign bit (always 0 for unsigned input)
     reg [9:0] mantissa;     // 10-bit mantissa for FP16
     reg [15:0] sum;         // Final FP16 result
-
+ 
     always @(*) begin
         // Initialize outputs
         sign = 1'b0;        // Always positive since input is unsigned
