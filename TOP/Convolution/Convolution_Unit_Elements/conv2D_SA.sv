@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+ 
 module tb_conv2D_SA;
 
     // Parameters
@@ -256,7 +256,7 @@ module conv3D_SA #(
     endgenerate
 
     assign final_psum_out = psum[CHANNEL]; // Output of last conv2D_SA
-    //final output =  psum[CHANNEL]各項相加+bias
+    //final output =  psum[CHANNEL]礎U繞繕竅��瞼[+bias
     
 endmodule
 
