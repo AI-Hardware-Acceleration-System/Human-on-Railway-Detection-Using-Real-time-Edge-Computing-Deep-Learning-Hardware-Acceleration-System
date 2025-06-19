@@ -11,7 +11,7 @@ module Top(
 //    PS_BRAM_raddr, 
     PS_BRAM_rdata,
     Conv1_1_Address
-    );
+); 
     
     // -------------------------------------------------------------Parameters--------------------------------------------------------------
 //    parameter PS_BRAM_NUMBER = 3;
@@ -349,18 +349,18 @@ module Top(
     .out_latency(OUT_LATENCY)
     )bram_ctrl0(
     .clk(clk_compound), .rst(reset),
-    .calculate(calculate),                //Convªºcalculate
-    .state(state),              //·í«estate  (idle, Conv1_1......)
-    .current_loop(current_loop),       //Convolutionªºcurrent loop
-    .current_filter(current_filter),     //Convolutionªºcurrent filter
-    .Pool_loop(avg_loop),          //Pool¦b²Ä´X­Óloop
-    .ENA(ENA),          //¤jBRAMªºA port enable (¼g)   (BIGs¬Oparameter = 12)
-    .ENB(ENB),          //¤jBRAMªºB port enable (Åª)
-    .ena(ena),        //¤pBRAMªºA port enable (¼g)   (SMALLs¬Oparameter = 32)
-    .enb(enb),       //¤pBRAMªºB port enable (Åª)
-    .input_addr(BRAM_Control_In_Address),       //Åª¨úinput data¥Îªºaddress
-    .out_temp_addr(BRAM_Control_Out_temp_Address),    //Åª¨úoutput temp data¥Îªºaddress
-    .output_addr(BRAM_Control_Out_Address)      //¼g¤Joutput data¥Îªºaddress
+    .calculate(calculate),                //Convçš„calculate
+    .state(state),              //ç•¶å‰state  (idle, Conv1_1......)
+    .current_loop(current_loop),       //Convolutionçš„current loop
+    .current_filter(current_filter),     //Convolutionçš„current filter
+    .Pool_loop(avg_loop),          //Poolåœ¨ç¬¬å¹¾å€‹loop
+    .ENA(ENA),          //å¤§BRAMçš„A port enable (å¯«)   (BIGsæ˜¯parameter = 12)
+    .ENB(ENB),          //å¤§BRAMçš„B port enable (è®€)
+    .ena(ena),        //å°BRAMçš„A port enable (å¯«)   (SMALLsæ˜¯parameter = 32)
+    .enb(enb),       //å°BRAMçš„B port enable (è®€)
+    .input_addr(BRAM_Control_In_Address),       //è®€å–input dataç”¨çš„address
+    .out_temp_addr(BRAM_Control_Out_temp_Address),    //è®€å–output temp dataç”¨çš„address
+    .output_addr(BRAM_Control_Out_Address)      //å¯«å…¥output dataç”¨çš„address
 //    .Conv_last_data()
     );
     
