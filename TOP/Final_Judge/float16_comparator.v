@@ -2,7 +2,7 @@ module float16_comparator(
     output reg out_compared,
     input [15:0] first_comp, second_comp
 );
-    
+     
     always @(*) begin
         if(first_comp[15] < second_comp[15]) begin // first is positive, second is negative
             out_compared = 1'b0;
