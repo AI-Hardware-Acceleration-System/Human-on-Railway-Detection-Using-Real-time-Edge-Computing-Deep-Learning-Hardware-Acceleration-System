@@ -1,4 +1,5 @@
 **本系統之大致hierarchy如下圖所示:**</br>
+**整合尚未完成，軟體端結果與硬體端計算結果有差異，目前仍在驗證中**</br>
 </br>
 >內部各區塊之詳細hierarchy請參見各資料夾</br>
 ![image](https://github.com/AI-Hardware-Acceleration-System/Human-on-Railway-Detection-Using-Real-time-Edge-Computing-Deep-Learning-Hardware-Acceleration-System/blob/main/CNN_Software/image/system_hireachy.jpg)</br>
